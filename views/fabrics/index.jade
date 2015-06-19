@@ -12,9 +12,10 @@ block content
       th Yardage available
       th Domestic?
     tbody
-      tr
-        td
-        td
-        td
-        td
-        td
+      each fabric in fabrics
+        tr
+          td= fabric.name
+          td= fabric.content
+          td= fabric.width_in_inches
+          td= fabric.yardage
+          td= fabric.domestic ? "Domestic" : "Imported"
