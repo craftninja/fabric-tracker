@@ -1,4 +1,4 @@
-require('./.env');
+process.env.DATABASE_URL || require('./.env');
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
